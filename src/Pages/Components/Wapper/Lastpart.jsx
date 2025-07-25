@@ -1,6 +1,7 @@
 import NewReleasesIcon from "@mui/icons-material/NewReleases";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import img1 from "../../../Pages/img/svgexport-16 (1).svg";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 function Lastpart() {
   return (
@@ -36,18 +37,21 @@ function Lastpart() {
           <p className="text-gray-700 text-[12px]">سفارش بصورت حقوقی ثبت شود</p>
         </div>
       </div>
-
+      <div className="lg:hidden  flex mx-1 justify-between">
+        <p className="text-gray-600 text-[13px]">صورت حساب</p>
+        <KeyboardArrowDownIcon className="text-gray-600" />
+      </div>
       <hr />
 
-      <div className="flex  flex-wrap sm:justify-between smd:justify-center items-center gap-4 mt-4">
-        <button className="bg-emerald-500 w-full sm:w-auto px-[50px] h-[40px] text-[11px] text-white rounded-lg">
+      <div className="flex  flex-wrap justify-between  items-center gap-4 mt-4">
+        <button className="bg-emerald-500  px-[50px] h-[40px] text-[11px] text-white rounded-lg">
           انتخاب نحوه پرداخت
         </button>
 
         <div className="flex flex-col">
           <p className="text-[11px]">مبلغ قابل پرداخت</p>
-          <div className="flex mt-1 gap-1 items-center">
-            <p className="font-black text-[14px]">
+          <div className="flex mt-1 gap-1 ">
+            <p className="font-black text-[14px] ">
               {(60648018).toLocaleString("fa-IR")}
             </p>
             <img src={img1} className="w-[23px] h-[23px]" />
