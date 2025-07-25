@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: fn !important;
+}
+
+@font-face {
+  font-family: fn;
+  src: url(../src//Pages/Fonts/IRANSansXFaNum-Regular.ttf);
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
